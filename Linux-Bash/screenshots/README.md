@@ -1,1 +1,1 @@
-This is where screenshots will be.
+Screenshots from TryHackMe labs showing successful script execution.
