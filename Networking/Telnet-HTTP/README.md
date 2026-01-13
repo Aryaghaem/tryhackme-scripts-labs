@@ -11,3 +11,17 @@ Skills practiced:
 - TCP communication
 - HTTP basics
 - Service enumeration
+  
+- ## Retrieving a Hidden Web Resource
+
+Extended the same telnet technique to request a non-default file on the web server.
+
+- Manually requested a specific resource using `GET /flag.html HTTP/1.0`
+- Observed the full HTTP response, including headers and HTML body
+- Identified hidden content that is not rendered in a browser
+
+Additional skills reinforced:
+- Manual web enumeration
+- Understanding HTTP request formatting
+- Identifying information exposure in server responses
+
