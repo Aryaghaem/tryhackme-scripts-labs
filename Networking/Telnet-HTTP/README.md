@@ -24,4 +24,3 @@ Additional skills reinforced:
 - Manual web enumeration
 - Understanding HTTP request formatting
 - Identifying information exposure in server responses
-
