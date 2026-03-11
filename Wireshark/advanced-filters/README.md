@@ -19,7 +19,6 @@ Tool used:
 
 Filter used:
 
-http.server contains "IIS"
 
 Purpose:
 
@@ -35,7 +34,17 @@ Screenshot:
 
 Filter used:
 
-http.server contains "IIS/7.5"
+
+Purpose:
+
+Identify HTTP packets where the web server is Microsoft IIS.
+
+Screenshot:
+
+![IIS Servers](screenshots/iis-servers.png)
+
+---
+
 
 Purpose:
 
@@ -51,7 +60,6 @@ Screenshot:
 
 Filter used:
 
-tcp.port in {3333 4444 9999}
 
 Purpose:
 
@@ -67,7 +75,6 @@ Screenshot:
 
 Filter used:
 
-ip.ttl % 2 == 0
 
 Purpose:
 
@@ -83,7 +90,6 @@ Screenshot:
 
 Filter used:
 
-tcp.checksum_bad == 1
 
 Purpose:
 
