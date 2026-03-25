@@ -2,14 +2,28 @@
 
 Hello! I am an aspiring SOC analyst based in New Zealand working towards a career in Cybersecurity. This repository is where I document my daily learning, labs, and progress.
 
+## SOC Analyst Portfolio
+
+Hands-on cybersecurity investigation labs completed as part of TryHackMe SOC Level 1 training.
+
+### Labs
+
+- [RDP Brute Force Detection](./windows-initial-access/rdp-brute-force/)
+- [Phishing Malware Detection via Sysmon](./windows-initial-access/phishing-sysmon-analysis/)
+- [USB Malware Detection via Sysmon](./windows-initial-access/usb-malware-analysis/)
+
 ## 📈 What I'm Learning Right Now
+
 - **Platforms:** TryHackMe
-- **Topics:** Linux Fundamentals, Bash Scripting, and Networking Basics.
+- **Topics:** Linux Fundamentals, Bash Scripting, Networking Basics, and Windows security monitoring.
 
 ## 📂 My Progress
-- **TryHackMe Labs:** [Folder Link Here] - Screenshots and notes from labs.
-- **Linux & Bash:** [Folder Link Here] - Simple scripts and command cheat sheets.
-- **Study Notes:** [Folder Link Here] - Simple explanations of concepts I've mastered.
+
+- **TryHackMe Labs:** [TryHackMe-Labs](./TryHackMe-Labs/) — Screenshots and notes from labs.
+- **Linux & Bash:** [Linux-Bash](./Linux-Bash/) — Simple scripts and command cheat sheets.
+- **Study Notes:** [Notes](./Notes/) — Simple explanations of concepts I've mastered.
+- **Windows initial access (SOC Level 1):** [windows-initial-access](./windows-initial-access/) — Investigation write-ups and screenshots.
 
 ---
+
 *Goal: To build a strong technical foundation and transition into a Junior SOC Analyst role.*
