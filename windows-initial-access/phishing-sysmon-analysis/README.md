@@ -16,17 +16,17 @@ Windows Event Viewer (Sysmon logs)
 ### 1. Identify the malicious download
 Event ID: 11
 Filtered for file creation events where the Image was a web browser. Found the browser creating a suspicious archive in the Downloads folder.
-![Malware Downloaded](./screenshots/malware-downloaded.png)
+![malware downloaded](./screenshots/malware-downloaded.png)
 
 ### 2. Confirm malware execution
 Event ID: 1
 Filtered for process creation and found the extracted file executing with Explorer.exe as parent. Noted the ProcessId.
-![Malware Executed](./screenshots/malware-executed.png)
+![malware executed](./screenshots/malware-executed.png)
 
 ### 3. Trace C2 communication
 Event ID: 3
 Used the ProcessId from Step 2 to filter network connection events. Found the malware connecting to an external malicious domain.
-![C2 Connection](./screenshots/c2-connection.png)
+![c2 connection](./screenshots/c2-connection.png)
 
 ---
 
