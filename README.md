@@ -24,6 +24,10 @@ Hands-on cybersecurity investigation labs completed as part of TryHackMe SOC Lev
 - **Study Notes:** [Notes](./Notes/) — Simple explanations of concepts I've mastered.
 - **Windows initial access (SOC Level 1):** [windows-initial-access](./windows-initial-access/) — Investigation write-ups and screenshots.
 
+### Windows Threat Detection
+- [Detecting Discovery Commands](./windows-threat-detection/detecting-discovery)
+- [Detecting Data Stealer Collection](./windows-threat-detection/detecting-collection)
+
 ---
 
 *Goal: To build a strong technical foundation and transition into a Junior SOC Analyst role.*
