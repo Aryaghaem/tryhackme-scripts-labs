@@ -19,7 +19,7 @@ Event ID: 1
 
 Filtered Sysmon logs for Event ID 1 (process creation). Searched for events where ParentImage showed invoice.pdf.exe. The first child process it launched revealed the attacker's first action after getting in.
 
-![First Discovery Command](./screenshots/first-discovery-command.wbep)
+![First Discovery Command](./screenshots/first-discovery-command.webp)
 
 ---
 
