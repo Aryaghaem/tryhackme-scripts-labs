@@ -28,6 +28,12 @@ Hands-on cybersecurity investigation labs completed as part of TryHackMe SOC Lev
 - [Detecting Discovery Commands](./windows-threat-detection/detecting-discovery)
 - [Detecting Data Stealer Collection](./windows-threat-detection/detecting-collection)
 
+### Windows Threat Detection 3
+- [C2 Detection](./windows-threat-detection-3/c2-detection)
+- [Backdoor User Account Detection](./windows-threat-detection-3/backdoor-user-detection)
+- [Malicious Service and Scheduled Task Detection](./windows-threat-detection-3/service-task-persistence)
+- [Startup Folder and Run Key Persistence Detection](./windows-threat-detection-3/startup-runkey-persistence)
+
 ---
 
 *Goal: To build a strong technical foundation and transition into a Junior SOC Analyst role.*
