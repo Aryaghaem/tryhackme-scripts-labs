@@ -86,6 +86,3 @@ homelabs, and practical IT fundamentals.
 - Complete TryHackMe SOC Level 1 certification
 - Pass CompTIA Security+ exam
 - Transition into a Junior SOC Analyst or IT Support role by mid-2026
-
-### File and Hash Intelligence
-- [Threat Intelligence Challenge — Independent File Analysis](./file-hash-intelligence/threat-intelligence-challenge)
