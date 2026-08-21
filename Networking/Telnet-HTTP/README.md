@@ -24,3 +24,17 @@ Additional skills reinforced:
 - Manual web enumeration
 - Understanding HTTP request formatting
 - Identifying information exposure in server responses
+
+## Screenshots
+
+Raw HTTP response returned over the telnet connection, including server headers.
+
+![Raw HTTP response over telnet](./screenshots/http-response.png)
+
+Flag found in the HTTP response body.
+
+![Flag found in the HTTP response](./screenshots/http-flag-found.png)
+
+Flag retrieved from the manually requested resource.
+
+![Flag retrieved via manual telnet request](./screenshots/telnet-flag-found.png)

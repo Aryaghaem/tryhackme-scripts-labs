@@ -21,7 +21,7 @@ http.request.method == "POST"
 
 A suspicious POST request containing "jndi" was identified.
 
-![Log4j POST request](./Screenshots/log4j-post-request.png)
+![Log4j POST request](./screenshots/log4j-post-request.png)
 
 ---
 
@@ -29,7 +29,7 @@ A suspicious POST request containing "jndi" was identified.
 
 The payload contained base64 encoded data which was decoded to reveal the attacker’s IP address.
 
-![Decoded IP](./Screenshots/base64-decoded-ip.png)
+![Decoded IP](./screenshots/base64-decoded-ip.png)
 
 ---
 

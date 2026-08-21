@@ -21,7 +21,7 @@ Event ID:
 
 A successful login event was identified as the starting point.
 
-![Logon event](./Screenshots/logon-event.png)
+![Logon event](./screenshots/logon-event.png)
 
 ---
 
@@ -33,7 +33,7 @@ Event ID:
 
 A new user account was created shortly after the login.
 
-![User created](./Screenshots/user-created.png)
+![User created](./screenshots/user-created.png)
 
 ---
 
@@ -45,7 +45,7 @@ Event ID:
 
 The new account was added to privileged groups.
 
-![Privilege escalation](./Screenshots/privilege-escalation.png)
+![Privilege escalation](./screenshots/privilege-escalation.png)
 
 ---
 
@@ -53,7 +53,7 @@ The new account was added to privileged groups.
 
 The Logon ID from the login event matches the Logon ID in the account creation event.
 
-![Logon ID match](./Screenshots/logon-id-match.png)
+![Logon ID match](./screenshots/logon-id-match.png)
 
 ---
 

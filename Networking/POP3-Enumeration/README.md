@@ -16,3 +16,8 @@ Used the POP3 protocol to authenticate to a mail server and retrieve email messa
 ## Why this matters for SOC
 POP3 traffic can expose usernames, passwords, and email contents to anyone monitoring the network, making it important to detect plaintext authentication and data access.
 
+## Screenshots
+
+Flag retrieved from the mailbox after authenticating over POP3.
+
+![Flag retrieved over POP3](./screenshots/pop3-flag-found.png)

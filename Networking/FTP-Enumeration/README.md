@@ -15,3 +15,9 @@ Used the FTP protocol to enumerate files and retrieve data from a remote FTP ser
 
 ## Why this matters for SOC
 FTP traffic is unencrypted by default, making it easy to inspect credentials, commands, and file contents during network monitoring and investigations.
+
+## Screenshots
+
+Flag retrieved from the file transferred off the FTP server.
+
+![Flag retrieved over FTP](./screenshots/ftp-flag-found.png)

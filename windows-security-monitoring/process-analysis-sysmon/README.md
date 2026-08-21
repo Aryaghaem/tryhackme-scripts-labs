@@ -21,7 +21,7 @@ Sysmon Event ID:
 
 The user’s web browser process was identified.
 
-![Browser process](./Screenshots/browser-process.png)
+![Browser process](./screenshots/browser-process.png)
 
 ---
 
@@ -33,7 +33,7 @@ Sysmon Event ID:
 
 A suspicious file downloaded from the browser was identified via process execution.
 
-![Downloaded file](./Screenshots/downloaded-file.png)
+![Downloaded file](./screenshots/downloaded-file.png)
 
 ---
 
@@ -45,7 +45,7 @@ Sysmon Event ID:
 
 Network logs revealed the URL used to download the file.
 
-![Download URL](./Screenshots/network-connection.png)
+![Download URL](./screenshots/network-connection.png)
 
 ---
 

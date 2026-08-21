@@ -22,3 +22,17 @@ In this lab, I used Nmap to enumerate open TCP ports and identify services runni
 - Port scanning is used to identify exposed services
 - Service enumeration helps assess attack surface
 - Open web services are common initial access points
+
+## Screenshots
+
+TCP SYN scan showing the open ports on the target.
+
+![Nmap TCP scan showing open ports](./screenshots/nmap-tcp-open-ports.png)
+
+Service and version detection identifying what is running behind each port.
+
+![Nmap service and version detection](./screenshots/nmap-service-detection.png)
+
+Flag retrieved from the web server identified in the scan.
+
+![Flag retrieved from the web server](./screenshots/web-server-flag.png)

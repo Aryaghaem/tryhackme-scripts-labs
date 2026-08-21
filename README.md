@@ -33,42 +33,44 @@ homelabs, and practical IT fundamentals.
 ## SOC Analyst & Security Labs
 
 ### Windows Initial Access
-- **Phishing Sysmon Analysis** — Malware detection through process monitoring
-- **USB Malware Analysis** — USB propagation and execution detection
+- [Phishing Sysmon Analysis](./windows-initial-access/phishing-sysmon-analysis) - malware detection through process monitoring
+- [USB Malware Analysis](./windows-initial-access/usb-malware-analysis) - USB propagation and execution detection
 
 ### Windows Security Monitoring
-- **User Backdoor Detection** — Detecting unauthorized user creation and privilege escalation
-- **Process Analysis with Sysmon** — Analyzing browser processes, downloaded files, and network connections
+- [User Backdoor Detection](./windows-security-monitoring/user-backdoor-detection) - detecting unauthorized user creation and privilege escalation
+- [Process Analysis with Sysmon](./windows-security-monitoring/process-analysis-sysmon) - analyzing browser processes, downloaded files, and network connections
 
 ### Windows Threat Detection
-- **Detecting Discovery Commands** — Identifying reconnaissance and defense evasion techniques
-- **Detecting Data Stealer Collection** — Clipboard theft and data exfiltration detection
+- [Detecting Discovery Commands](./windows-threat-detection/detecting-discovery) - identifying reconnaissance and defense evasion techniques
+- [Detecting Data Stealer Collection](./windows-threat-detection/detecting-collection) - clipboard theft and data exfiltration detection
 
 ### Windows Threat Detection 3
-- **Backdoor User Detection** — Unauthorized account creation and access patterns
-- **C2 Detection** — Command and control communications identification
-- **Service & Task Persistence** — Malicious service and scheduled task detection
-- **Startup Folder & Run Key Persistence** — Registry persistence mechanism detection
+- [Backdoor User Detection](./windows-threat-detection-3/backdoor-user-detection) - unauthorized account creation and access patterns
+- [C2 Detection](./windows-threat-detection-3/c2-detection) - command and control communications identification
+- [Service & Task Persistence](./windows-threat-detection-3/service-task-persistence) - malicious service and scheduled task detection
+- [Startup Folder & Run Key Persistence](./windows-threat-detection-3/startup-runkey-persistence) - registry persistence mechanism detection
 
 ### Wireshark Network Analysis
-- **Advanced Filters** — TCP checksum validation, TTL analysis, version detection
-- **ARP MITM Investigation** — Man-in-the-middle attack detection and credential theft analysis
-- **DNS Tunneling Detection** — Identifying data exfiltration via DNS queries
-- **Log4j Attack Detection** — Detecting Log4j RCE exploitation attempts
-- **Protocol Filters** — DNS, HTTP, and TCP port analysis
+- [Advanced Filters](./Wireshark/advanced-filters) - TCP checksum validation, TTL analysis, version detection
+- [ARP MITM Investigation](./Wireshark/arp-mitm-investigation) - man-in-the-middle attack detection and credential theft analysis
+- [DNS Tunneling Detection](./Wireshark/dns-tunneling-detection) - identifying data exfiltration via DNS queries
+- [Log4j Attack Detection](./Wireshark/log4j-attack-detection) - detecting Log4j RCE exploitation attempts
+- [Protocol Filters](./Wireshark/protocol-filters) - DNS, HTTP, and TCP port analysis
 
 ### Email & PDF Analysis
-- **Reconstructing PDF from Base64** — CyberChef recipe for decoding and analyzing encoded files
+- [Reconstructing PDF from Base64](./Email-Analysis/Reconstructing-PDF-from-Base64) - CyberChef recipe for decoding and analyzing encoded files
+
+### File and Hash Intelligence
+- [Threat Intelligence Challenge](./file-hash-intelligence/threat-intelligence-challenge) - independent file analysis and hash reputation lookup
 
 ### Linux & Bash
-- **Bash Scripting** — Flag hunting and system automation scripts
-- **Linux Fundamentals** — Command-line proficiency and scripting
+- [Linux and Bash Scripting](./Linux-Bash) - flag hunting, log searching, and system automation scripts
 
 ### Network Enumeration
-- **FTP Enumeration** — File transfer protocol reconnaissance and flag retrieval
-- **Nmap Web Enumeration** — Service detection and web server identification
-- **POP3 Enumeration** — Email protocol reconnaissance
-- **Telnet HTTP** — Legacy protocol analysis and HTTP communication
+- [FTP Enumeration](./Networking/FTP-Enumeration) - file transfer protocol reconnaissance and flag retrieval
+- [Nmap Web Enumeration](./Networking/Nmap-Web-Enumeration) - service detection and web server identification
+- [POP3 Enumeration](./Networking/POP3-Enumeration) - email protocol reconnaissance
+- [Telnet HTTP](./Networking/Telnet-HTTP) - legacy protocol analysis and HTTP communication
 
 ---
 
