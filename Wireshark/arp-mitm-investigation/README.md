@@ -19,7 +19,9 @@ ARP traffic was inspected to identify devices sending abnormal ARP requests.
 
 Filter used:
 
+```
 arp.src.hw_mac == 00:0c:29:e2:18:b4
+```
 
 This revealed a device sending a large number of ARP requests, indicating possible ARP spoofing activity.
 
@@ -33,7 +35,9 @@ HTTP traffic was analysed to determine if traffic was being redirected through t
 
 Filter used:
 
+```
 eth.dst == 00:0c:29:e2:18:b4 and http
+```
 
 HTTP packets were observed being forwarded to the attacker's MAC address.
 
@@ -47,7 +51,9 @@ HTTP POST requests were inspected to identify captured credentials.
 
 Filter used:
 
+```
 http.request.method == "POST"
+```
 
 ![Credential POST request](screenshots/credential-post.png)
 
@@ -84,4 +90,3 @@ Key findings:
 - ARP spoofing detection
 - Man-in-the-Middle traffic analysis
 - HTTP credential inspection
-

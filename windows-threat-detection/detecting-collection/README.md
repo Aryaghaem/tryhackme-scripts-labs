@@ -37,7 +37,7 @@ Found PowerShell commands launched by stealer.exe that searched the computer for
 
 Event ID: 1
 
-Found a PowerShell cmdlet launched by the stealer specifically designed to read the clipboard — the temporary storage holding whatever the user last copied with Ctrl+C.
+Found a PowerShell cmdlet launched by the stealer specifically designed to read the clipboard - the temporary storage holding whatever the user last copied with Ctrl+C.
 
 ![Stealer Clipboard Cmdlet](./screenshots/stealer-clipboard-cmdlet.png)
 

@@ -15,7 +15,9 @@ Tool used:
 
 Filter used:
 
+```
 tcp.port == 4444
+```
 
 Purpose:
 
@@ -31,7 +33,9 @@ Screenshot:
 
 Filter used:
 
+```
 http.request.method == "GET" and tcp.port == 80
+```
 
 Purpose:
 
@@ -47,7 +51,9 @@ Screenshot:
 
 Filter used:
 
+```
 dns.qry.type == 1
+```
 
 Purpose:
 
@@ -65,4 +71,3 @@ Screenshot:
 - Network protocol filtering
 - Investigating HTTP traffic
 - DNS query analysis
-

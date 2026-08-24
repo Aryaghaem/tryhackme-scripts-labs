@@ -1,9 +1,9 @@
 # 🛡️ Cybersecurity & IT Learning Portfolio
 
-Hello! I'm an aspiring IT professional and SOC analyst based in Auckland, NZ, 
+Hello! I'm an aspiring IT professional and SOC analyst based in Auckland, NZ,
 working toward a career in cybersecurity and system administration.
 
-This repository documents my hands-on learning through TryHackMe labs, 
+This repository documents my hands-on learning through TryHackMe labs,
 homelabs, and practical IT fundamentals.
 
 ---

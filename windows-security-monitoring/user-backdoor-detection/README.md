@@ -15,9 +15,7 @@ Event Viewer
 
 ### 1. Identify RDP login
 
-Event ID:
-
-4624
+Event ID: 4624
 
 A successful login event was identified as the starting point.
 
@@ -27,9 +25,7 @@ A successful login event was identified as the starting point.
 
 ### 2. Detect user creation
 
-Event ID:
-
-4720
+Event ID: 4720
 
 A new user account was created shortly after the login.
 
@@ -39,9 +35,7 @@ A new user account was created shortly after the login.
 
 ### 3. Detect privilege escalation
 
-Event ID:
-
-4732
+Event ID: 4732
 
 The new account was added to privileged groups.
 

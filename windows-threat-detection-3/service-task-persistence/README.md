@@ -17,9 +17,9 @@ Windows Event Viewer (Security logs)
 
 Event ID: 4697
 
-Filtered Security logs for service creation events. Found a new service created to run the Nessie malware automatically on every system boot.
+Filtered Security logs for service creation events. Found a service named "Data Protection Service" installed with a service file name of `C:\Windows\Help\nessie.exe`, running as `LocalSystem` with a start type of 2 (automatic). The legitimate sounding display name hides a binary planted in the Help directory, which is not where services normally live.
 
-![Malicious Service Created](./screenshots/malicious-service-created.png)
+![Event ID 4697 showing the Data Protection Service pointing at nessie.exe](./screenshots/malicious-service-created.png)
 
 ---
 
@@ -27,15 +27,15 @@ Filtered Security logs for service creation events. Found a new service created 
 
 Event ID: 4698
 
-Filtered Security logs for scheduled task creation events. Found a new task created to run the Troy malware automatically on system startup.
+Filtered Security logs for scheduled task creation events. Found a task registered as `\AmazonSync` with a `BootTrigger`, so the Troy malware re-launches on every system boot. As with the service, the name is chosen to look like ordinary vendor software.
 
-![Malicious Task Created](./screenshots/malicious-task-created.png)
+![Event ID 4698 showing the AmazonSync task registered with a boot trigger](./screenshots/malicious-task-created.png)
 
 ---
 
 ## Findings
-- Malicious Windows service created to run Nessie malware on boot
-- Malicious scheduled task created to run Troy malware on startup
+- Malicious service "Data Protection Service" created to run `C:\Windows\Help\nessie.exe` as LocalSystem on boot
+- Malicious scheduled task `\AmazonSync` created with a boot trigger to run the Troy malware
 - Both persistence methods survive system reboots
 - Detected via Security Event ID 4697 and 4698
 

@@ -1,10 +1,10 @@
-# Threat Intelligence Challenge — File and Hash Analysis
+# Threat Intelligence Challenge - File and Hash Analysis
 
 ## Lab
 TryHackMe - File and Hash Intelligence
 
 ## Objective
-Independently investigate a suspicious file (Challenge.bin.sample) using real threat intelligence tools — generating a hash, analysing it on VirusTotal, reviewing sandbox behaviour, and mapping findings to MITRE ATT&CK.
+Independently investigate a suspicious file (Challenge.bin.sample) using real threat intelligence tools - generating a hash, analysing it on VirusTotal, reviewing sandbox behaviour, and mapping findings to MITRE ATT&CK.
 
 ## Tools Used
 - PowerShell (hash generation)

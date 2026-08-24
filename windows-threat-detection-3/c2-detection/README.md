@@ -4,7 +4,7 @@
 TryHackMe - Windows Threat Detection 3
 
 ## Objective
-Investigate Sysmon logs to detect a C2 setup — finding the suspicious archive downloaded, the hidden malware file, and the C2 server domain.
+Investigate Sysmon logs to detect a C2 setup - finding the suspicious archive downloaded, the hidden malware file, and the C2 server domain.
 
 ## Tool
 Windows Event Viewer (Sysmon logs)
@@ -17,9 +17,9 @@ Windows Event Viewer (Sysmon logs)
 
 Event ID: 11
 
-Filtered Sysmon for file creation events. Found a suspicious archive file appearing in the Downloads folder — this was the initial phishing attachment that triggered the C2 setup.
+Filtered Sysmon for file creation events. Found `URGENT!.zip` written into the Downloads folder by `chrome.exe` - the initial phishing attachment that triggered the C2 setup. The urgency in the filename is itself a social engineering tell.
 
-![C2 Archive Downloaded](./screenshots/c2-archive-downloaded.png)
+![Event ID 11 showing URGENT!.zip created in Downloads by Chrome](./screenshots/c2-archive-downloaded.png)
 
 ---
 
@@ -27,9 +27,9 @@ Filtered Sysmon for file creation events. Found a suspicious archive file appear
 
 Event ID: 11
 
-Continued reviewing file creation events. Found the malware dropping a second hidden file into a staging directory. Attackers do this so the C2 connection survives even if the original attachment gets deleted.
+Continued reviewing file creation events. Found `powershell.exe` dropping `update.exe` into `C:\Users\Administrator\AppData\Roaming\` - a staging directory chosen because it is user writable and rarely inspected. Attackers do this so the C2 connection survives even if the original attachment is deleted, and the innocuous name helps it blend in.
 
-![C2 Malware Hidden](./screenshots/c2-malware-hidden.png)
+![Event ID 11 showing update.exe dropped into AppData Roaming by PowerShell](./screenshots/c2-malware-hidden.png)
 
 ---
 
@@ -37,16 +37,16 @@ Continued reviewing file creation events. Found the malware dropping a second hi
 
 Event ID: 22
 
-Filtered Sysmon for DNS query events from the malware process. Found the domain the malware was connecting to — this is the attacker's Command and Control server.
+Filtered Sysmon for DNS query events from the malware process. Found `update.exe` resolving `route.m365officesync.workers.dev` - the attacker's Command and Control server. The domain is built to impersonate Microsoft 365 infrastructure while actually sitting on a public developer platform.
 
-![C2 Domain](./screenshots/c2-domain.png)
+![Event ID 22 showing update.exe resolving the C2 domain](./screenshots/c2-domain.png)
 
 ---
 
 ## Findings
-- Suspicious archive downloaded via phishing
-- C2 malware hidden in staging directory to survive deletion of original file
-- Malware established connection to external C2 server domain
+- Suspicious archive `URGENT!.zip` downloaded via phishing
+- C2 malware `update.exe` hidden in `AppData\Roaming` to survive deletion of the original file
+- Malware resolved the external C2 domain `route.m365officesync.workers.dev`
 - Full C2 setup traced using Event ID 11 and Event ID 22
 
 ---

@@ -21,7 +21,7 @@ Filtered for file creation events where the Image was a web browser. Found the b
 ### 2. Confirm malware execution
 Event ID: 1
 Filtered for process creation and found the extracted file executing with Explorer.exe as parent. Noted the ProcessId.
-![malware executed](./screenshots/malware-executed.jpg)
+_Screenshot for this step is not available; the Event ID 1 capture was lost before it was committed._
 
 ### 3. Trace C2 communication
 Event ID: 3
@@ -43,8 +43,3 @@ Used the ProcessId from Step 2 to filter network connection events. Found the ma
 - ProcessId pivoting across multiple event types
 - Malware download and execution detection
 - C2 communication identification
-
-## Screenshots Needed
-- malware-downloaded.png — Event ID 11 showing browser downloading file
-- malware-executed.png — Event ID 1 showing malware running with ProcessId visible
-- c2-connection.png — Event ID 3 showing same ProcessId connecting to malicious domain

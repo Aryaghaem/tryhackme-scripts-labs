@@ -17,7 +17,9 @@ Wireshark
 
 Filter used:
 
+```
 dns.qry.name.len > 15 and !mdns
+```
 
 This reveals DNS queries with unusually long domain names.
 

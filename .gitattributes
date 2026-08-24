@@ -1,0 +1,13 @@
+# Normalize line endings so the repo stays consistent when edited on Windows.
+* text=auto eol=lf
+
+# Shell scripts must keep LF endings to remain executable on Linux.
+*.sh text eol=lf
+
+# Binary assets - never touch, and don't show as text in diffs.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.pcap binary
+*.pcapng binary

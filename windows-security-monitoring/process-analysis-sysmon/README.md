@@ -15,11 +15,9 @@ Event Viewer (Sysmon Logs)
 
 ### 1. Identify browser activity
 
-Sysmon Event ID:
+Sysmon Event ID: 1
 
-1
-
-The user’s web browser process was identified.
+The user's web browser process was identified.
 
 ![Browser process](./screenshots/browser-process.png)
 
@@ -27,9 +25,7 @@ The user’s web browser process was identified.
 
 ### 2. Detect downloaded file
 
-Sysmon Event ID:
-
-1
+Sysmon Event ID: 1
 
 A suspicious file downloaded from the browser was identified via process execution.
 
@@ -39,13 +35,11 @@ A suspicious file downloaded from the browser was identified via process executi
 
 ### 3. Identify download source
 
-Sysmon Event ID:
+Sysmon Event ID: 15
 
-15
+The Zone.Identifier alternate data stream written alongside the download revealed the source URL (`HostUrl`) the file came from.
 
-Network logs revealed the URL used to download the file.
-
-![Download URL](./screenshots/network-connection.png)
+![Download source URL recovered from the Zone.Identifier stream](./screenshots/download-source-zone-identifier.png)
 
 ---
 

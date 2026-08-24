@@ -4,10 +4,10 @@
 
 This lab demonstrates advanced filtering techniques using Wireshark.
 
-The objective was to analyze packet captures using operators such as:
-- contains
-- in
-- mathematical filtering
+The objective was to analyse a packet capture (`Exercise.pcapng`) using operators such as:
+- `contains` and `matches`
+- set membership with `in`
+- mathematical and string filtering
 - checksum analysis
 
 Tool used:
@@ -19,14 +19,17 @@ Tool used:
 
 Filter used:
 
+```
+http.server contains "IIS" && !(tcp.srcport==80)
+```
 
 Purpose:
 
-Identify HTTP packets where the web server is Microsoft IIS.
+Identify HTTP responses where the server header advertises Microsoft IIS, excluding traffic sourced from port 80 so the results focus on the non-standard listeners.
 
 Screenshot:
 
-![IIS Servers](screenshots/iis-servers.png)
+![IIS servers matched by the http.server filter](screenshots/iis-servers.png)
 
 ---
 
@@ -34,25 +37,17 @@ Screenshot:
 
 Filter used:
 
+```
+http.server contains "IIS" && http.server matches "7.5"
+```
 
 Purpose:
 
-Identify HTTP packets where the web server is Microsoft IIS.
+Narrow the previous result set to IIS servers running version 7.5, combining `contains` for the product name with `matches` for the version string.
 
 Screenshot:
 
-![IIS Servers](screenshots/iis-servers.png)
-
----
-
-
-Purpose:
-
-Identify packets from IIS servers running version 7.5.
-
-Screenshot:
-
-![IIS Version](screenshots/iis-version-75.png)
+![IIS 7.5 responses isolated by the combined filter](screenshots/iis-version-75.png)
 
 ---
 
@@ -60,14 +55,17 @@ Screenshot:
 
 Filter used:
 
+```
+tcp.port in {3333 4444 9999}
+```
 
 Purpose:
 
-Detect packets using uncommon or potentially suspicious ports.
+Detect traffic on uncommon ports frequently associated with backdoors and reverse shells, using the `in` operator to match a set of ports in a single expression.
 
 Screenshot:
 
-![Suspicious Ports](screenshots/suspicious-ports.png)
+![TCP traffic on ports 3333, 4444 and 9999](screenshots/suspicious-ports.png)
 
 ---
 
@@ -75,14 +73,17 @@ Screenshot:
 
 Filter used:
 
+```
+string(ip.ttl) matches "[02468]$"
+```
 
 Purpose:
 
-Analyze packets based on TTL values to demonstrate filtering using mathematical operators.
+Filter packets by TTL value, converting the numeric field to a string so a regular expression can match the trailing digit and isolate even TTLs.
 
 Screenshot:
 
-![Even TTL](screenshots/even-ttl.png)
+![Packets filtered to even TTL values](screenshots/even-ttl.png)
 
 ---
 
@@ -90,14 +91,17 @@ Screenshot:
 
 Filter used:
 
+```
+tcp.checksum.status == 0
+```
 
 Purpose:
 
-Detect packets with incorrect TCP checksums which may indicate corruption or network anomalies.
+Detect packets with an invalid TCP checksum, which may indicate corruption, tampering, or checksum offloading on the capturing host.
 
 Screenshot:
 
-![Bad Checksum](screenshots/bad-tcp-checksum.png)
+![TCP packets flagged with an incorrect checksum](screenshots/bad-tcp-checksum.png)
 
 ---
 
@@ -105,5 +109,5 @@ Screenshot:
 
 - Packet analysis
 - Network protocol investigation
-- Advanced Wireshark filtering
+- Advanced Wireshark filtering with `contains`, `matches` and `in`
 - Network anomaly detection
