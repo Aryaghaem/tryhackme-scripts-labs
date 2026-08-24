@@ -51,33 +51,33 @@ homelabs, and practical IT fundamentals.
 - [Startup Folder & Run Key Persistence](./windows-threat-detection-3/startup-runkey-persistence) - registry persistence mechanism detection
 
 ### Wireshark Network Analysis
-- [Advanced Filters](./Wireshark/advanced-filters) - TCP checksum validation, TTL analysis, version detection
-- [ARP MITM Investigation](./Wireshark/arp-mitm-investigation) - man-in-the-middle attack detection and credential theft analysis
-- [DNS Tunneling Detection](./Wireshark/dns-tunneling-detection) - identifying data exfiltration via DNS queries
-- [Log4j Attack Detection](./Wireshark/log4j-attack-detection) - detecting Log4j RCE exploitation attempts
-- [Protocol Filters](./Wireshark/protocol-filters) - DNS, HTTP, and TCP port analysis
+- [Advanced Filters](./wireshark/advanced-filters) - TCP checksum validation, TTL analysis, version detection
+- [ARP MITM Investigation](./wireshark/arp-mitm-investigation) - man-in-the-middle attack detection and credential theft analysis
+- [DNS Tunneling Detection](./wireshark/dns-tunneling-detection) - identifying data exfiltration via DNS queries
+- [Log4j Attack Detection](./wireshark/log4j-attack-detection) - detecting Log4j RCE exploitation attempts
+- [Protocol Filters](./wireshark/protocol-filters) - DNS, HTTP, and TCP port analysis
 
 ### Email & PDF Analysis
-- [Reconstructing PDF from Base64](./Email-Analysis/Reconstructing-PDF-from-Base64) - CyberChef recipe for decoding and analyzing encoded files
+- [Reconstructing PDF from Base64](./email-analysis/reconstructing-pdf-from-base64) - CyberChef recipe for decoding and analyzing encoded files
 
 ### File and Hash Intelligence
 - [Threat Intelligence Challenge](./file-hash-intelligence/threat-intelligence-challenge) - independent file analysis and hash reputation lookup
 
 ### Linux & Bash
-- [Linux and Bash Scripting](./Linux-Bash) - flag hunting, log searching, and system automation scripts
+- [Linux and Bash Scripting](./linux-bash) - flag hunting, log searching, and system automation scripts
 
 ### Network Enumeration
-- [FTP Enumeration](./Networking/FTP-Enumeration) - file transfer protocol reconnaissance and flag retrieval
-- [Nmap Web Enumeration](./Networking/Nmap-Web-Enumeration) - service detection and web server identification
-- [POP3 Enumeration](./Networking/POP3-Enumeration) - email protocol reconnaissance
-- [Telnet HTTP](./Networking/Telnet-HTTP) - legacy protocol analysis and HTTP communication
+- [FTP Enumeration](./networking/ftp-enumeration) - file transfer protocol reconnaissance and flag retrieval
+- [Nmap Web Enumeration](./networking/nmap-web-enumeration) - service detection and web server identification
+- [POP3 Enumeration](./networking/pop3-enumeration) - email protocol reconnaissance
+- [Telnet HTTP](./networking/telnet-http) - legacy protocol analysis and HTTP communication
 
 ---
 
 ## Current Progress
 
 - **TryHackMe SOC Level 1:** In progress (~25+ labs completed)
-- **Certifications:** Google Cybersecurity Certificate (completed), Security+ (in progress), Level 4 IT (graduating June 2026)
+- **Certifications:** Google Cybersecurity Certificate (completed), Security+ (in progress), Level 4 IT
 - **Homelabs:** Windows Server, PowerShell scripting, system administration practice
 - **Real-world experience:** 2 weeks shadowing a senior systems administrator
 
@@ -87,4 +87,4 @@ homelabs, and practical IT fundamentals.
 
 - Complete TryHackMe SOC Level 1 certification
 - Pass CompTIA Security+ exam
-- Transition into a Junior SOC Analyst or IT Support role by mid-2026
+- Transition into a Junior SOC Analyst or IT Support role
